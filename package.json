@@ -2,8 +2,44 @@
   "name": "rn-logger",
   "version": "0.0.1",
   "description": "A logging utility for React Native apps",
-  "main": "index.js",
-  "repository": "git@github.com:matthamil/rn-logger",
+  "keywords": [
+    "react native",
+    "logger",
+    "logging"
+  ],
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matthamil/rn-logger"
+  },
   "author": "Matt Hamil <j.matthew.hamil@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "engines": {
+    "node": ">10.0.0"
+  },
+  "scripts": {
+    "build": "tsc && rollup -c rollup.config.js",
+    "watch": "rollup -c rollup.config.js -w",
+    "lint": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.11",
+    "@types/node": "^11.13.6",
+    "@typescript-eslint/eslint-plugin": "^1.7.0",
+    "@typescript-eslint/parser": "^1.7.0",
+    "eslint": "^5.16.0",
+    "jest": "^24.7.1",
+    "rollup": "^1.10.1",
+    "rollup-plugin-sourcemaps": "^0.4.2",
+    "rollup-plugin-typescript2": "^0.20.1",
+    "typescript": "^3.4.4"
+  },
+  "dependencies": {}
 }
