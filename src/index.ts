@@ -1,5 +1,5 @@
 export class Logger {
-  log() {
+  public log(): void {
     console.log("Hello, world");
   }
 }
