@@ -27,5 +27,10 @@ jobs:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
 
-      # run tests!
-      - run: yarn test
+      - run:
+          name: Run unit tests
+          command: yarn test
+
+      - run:
+          name: Upload coverage report to Codecov
+          command: bash ./scripts/coverage_report.sh

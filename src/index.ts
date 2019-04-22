@@ -1,5 +1,1 @@
-export class Logger {
-  public log(): void {
-    console.log("Hello, world");
-  }
-}
+export const add = (a: number, b: number) => a + b;

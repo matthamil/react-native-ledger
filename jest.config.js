@@ -5,7 +5,6 @@ module.exports = {
   testEnvironment: "node",
   testRegex: "(/__tests__/.*|\\.test)\\.(ts|js)$",
   moduleFileExtensions: ["ts", "js"],
-  coveragePathIgnorePatterns: ["/node_modules/", "src/**/__tests__/**/*"],
   coverageThreshold: {
     global: {
       branches: 90,
@@ -14,5 +13,6 @@ module.exports = {
       statements: 95
     }
   },
-  collectCoverageFrom: ["src/**/*.{js,ts}"]
+  collectCoverageFrom: ["<rootDir>/src/**/*.{js,ts}", "!**/node_modules/**", "!**/__tests__/**"],
+  coverageDirectory: "coverage"
 };
