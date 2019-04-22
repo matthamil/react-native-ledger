@@ -9,7 +9,8 @@
     "declarationDir": "dist/types",
     "outDir": "./dist",
     "esModuleInterop": true,
-    "typeRoots": ["node_modules/@types"]
+    "typeRoots": ["node_modules/@types"],
+    "sourceMap": true
   },
   "include": ["src"]
 }

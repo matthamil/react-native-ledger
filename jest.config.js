@@ -14,5 +14,6 @@ module.exports = {
     }
   },
   collectCoverageFrom: ["<rootDir>/src/**/*.{js,ts}", "!**/node_modules/**", "!**/__tests__/**"],
-  coverageDirectory: "coverage"
+  coverageDirectory: "coverage",
+  coverageReporters: ["text", "json"]
 };
